@@ -1,0 +1,350 @@
+
+//-------------------------------------------
+//	Custom
+//-------------------------------------------
+
+
+body {
+
+	padding-top: 90px;
+
+	@media screen and (min-width: 521px) {
+
+		padding-top: 106px;
+
+	}
+
+	@media screen and (min-width: 761px) {
+
+		padding-top: 124px;
+
+	}
+
+	@media screen and (min-width: 961px) {
+
+		padding-top: 144px;
+
+	}
+
+	@media screen and (min-width: 1121px) {
+
+		padding-top: 244px;
+
+	}
+
+}
+
+
+#header {
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: rgb(251, 251, 251);
+	z-index: 999;
+
+	.wrap {
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 30px;
+
+		@media screen and (min-width: 761px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 1121px) {
+
+			max-width: 1060px;
+			padding: 0;
+
+		}
+
+		@media screen and (min-width: 1281px) {
+
+			max-width: 1180px;
+			padding: 0;
+
+		}
+
+		@media screen and (min-width: 1441px) {
+
+			max-width: 1296px;
+			padding: 0;
+
+		}
+
+	}
+
+}
+
+		#menu-class {
+
+			position: relative;
+			width: 100%;
+			height: 90px;
+			@include transition(height 0.15s);
+
+			@media screen and (min-width: 521px) {
+
+				height: 106px;
+
+			}
+
+			@media screen and (min-width: 761px) {
+
+				height: 124px;
+
+			}
+
+			@media screen and (min-width: 961px) {
+
+				height: 144px;
+
+			}
+
+			@media screen and (min-width: 1121px) {
+
+				height: 244px;
+
+			}
+
+			// While smaller...
+
+			.smaller & {
+
+				@media screen and (min-width: 521px) {
+
+					height: 90px;
+
+				}
+
+			}
+
+		}
+
+			/* Logo */
+
+			#logo {
+
+				position: absolute;
+				left: -5px;
+				top: 50%;
+				width: 62px;
+				margin: -35px 0 0 0;
+
+				@media screen and (min-width: 961px) {
+
+					left: -9px;
+					width: 102px;
+					margin: -55px 0 0 0;
+
+				}
+
+				img {
+
+					display: block;
+					width: 62px;
+					height: 70px;
+
+					@media screen and (min-width: 961px) {
+
+						width: 91px;
+						height: 102px;
+
+					}
+
+				}
+
+				// While smaller...
+
+				.smaller & {
+
+					@media screen and (min-width: 521px) {
+
+						left: -5px;
+						width: 62px;
+						margin: -35px 0 0 0;
+
+					}
+
+					img {
+
+						@media screen and (min-width: 521px) {
+
+							width: 62px;
+							height: 70px;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			/* Nav Toggle (Open) */
+
+			#menu-opener {
+
+				position: absolute;
+				right: -16px;
+				top: 50% !important;
+				width: 60px;
+				height: 60px;
+				margin: -30px 0 0 0;
+
+				svg {}
+
+			}
+
+			/* Primary Navigation */
+
+			#main-menu {
+
+				div {}
+
+					#menu-main-menu {}
+
+						.menu-item {
+
+							a {
+
+								&:hover {}
+
+							}
+
+						}
+
+						.selected-menu {}
+
+				#menu-text {}
+
+			}
+
+			/* Nav Toggle (Close) */
+
+			#menu-closer-wrap {
+
+				position: fixed;
+				top: 0 !important;
+				left: 0;
+				width: 100%;
+				opacity: 0;
+				visibility: hidden;
+				z-index: 999;
+
+				// While active...
+
+				&.active {
+
+					opacity: 1;
+					visibility: visible;
+
+				}
+
+				#menu-closer-inner-wrap {
+
+					width: 100%;
+					margin: 0 auto;
+					padding: 0 30px;
+
+					@media screen and (min-width: 761px) {
+
+						padding: 0 40px;
+
+					}
+
+					@media screen and (min-width: 1121px) {
+
+						max-width: 1060px;
+						padding: 0;
+
+					}
+
+					@media screen and (min-width: 1281px) {
+
+						max-width: 1180px;
+						padding: 0;
+
+					}
+
+					@media screen and (min-width: 1441px) {
+
+						max-width: 1296px;
+						padding: 0;
+
+					}
+
+				}
+
+					#menu-closer-inner-inner-wrap {
+
+						position: relative;
+						width: 100%;
+						height: 90px;
+						@include transition(height 0.15s);
+
+						@media screen and (min-width: 521px) {
+
+							height: 106px;
+
+						}
+
+						@media screen and (min-width: 761px) {
+
+							height: 124px;
+
+						}
+
+						@media screen and (min-width: 961px) {
+
+							height: 144px;
+
+						}
+
+						@media screen and (min-width: 1121px) {
+
+							height: 244px;
+
+						}
+
+						// While smaller...
+
+						.smaller & {
+
+							@media screen and (min-width: 521px) {
+
+								height: 90px;
+
+							}
+
+						}
+
+					}
+
+						#menu-closer {
+
+							position: absolute;
+							right: -16px;
+							top: 50% !important;
+							width: 60px;
+							height: 60px;
+							margin: -30px 0 0 0;
+							z-index: 1;
+
+							svg {}
+
+						}
+
+			}
+
+.krown-column-container.span12 {
+
+	margin-bottom: 80px;
+	padding: 0 !important;
+
+}
